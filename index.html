@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSYCODES DATA SYSTEM</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top">
+
+        <div class="logo">
+            <img src="https://arvaganteng47-creator.github.io/logo2/logo.jpg.jpeg" alt="Logo">
+        </div>
+
+        <div class="title">
+            <h1>PSYCODES</h1>
+            <p>Input data diri dengan mudah dan cepat</p>
+        </div>
+
+    </div>
+
+    <div class="guide">
+        <h3>Petunjuk Pengisian</h3>
+
+        <ul>
+            <li>Nama hanya boleh huruf dan spasi</li>
+            <li>NIM wajib menggunakan angka</li>
+            <li>Kelas contoh: A11.4501</li>
+            <li>Jurusan isi sesuai program studi</li>
+            <li>Alamat harus lengkap</li>
+        </ul>
+    </div>
+
+    <div class="warning" id="warning"></div>
+
+    <form id="formData">
+
+        <div class="group">
+            <input type="text" id="nama" required>
+            <label>Nama Lengkap</label>
+            <small>Contoh: Arva Saputra</small>
+        </div>
+
+        <div class="group">
+            <input type="text" id="nim" required>
+            <label>NIM</label>
+            <small>Contoh: A11.2025.16462</small>
+        </div>
+
+        <div class="group">
+            <input type="text" id="kelas" required>
+            <label>Kelas</label>
+            <small>Contoh: A11.4501</small>
+        </div>
+
+        <div class="group">
+            <input type="text" id="jurusan" required>
+            <label>Jurusan</label>
+            <small>Contoh: Teknik Informatika</small>
+        </div>
+
+        <div class="group">
+            <textarea id="alamat" required></textarea>
+            <label>Alamat</label>
+            <small>Isi alamat lengkap</small>
+        </div>
+
+        <button type="submit" class="btn">
+            SIMPAN DATA
+        </button>
+
+    </form>
+
+    <div class="result" id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
